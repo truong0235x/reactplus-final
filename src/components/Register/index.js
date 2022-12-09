@@ -34,6 +34,8 @@ function Register() {
         localStorage.setItem("id", res.data.id)
         navigate("/sign-in")
       })
+    } else {
+      alert("Passwords do not match")
     }
   }
 
@@ -70,13 +72,8 @@ function Register() {
           control={control}
           error={errors.password}
         />
-        {/* <InputUseForm
-          placeholder="Confirm Password"
-          control={control}
-          name='password'
-        /> */}
         <Input
-          placeholder="Confirm Password"
+          placeholder="Confirm password"
           type="password"
           status={checkConfirm ? "error" : ""}
           onBlur={(e) => handleConfirmPassword(e)}

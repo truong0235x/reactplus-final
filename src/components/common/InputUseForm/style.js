@@ -4,7 +4,7 @@ const style = {
     height: "51px",
     paddingLeft: "30px",
     fontSize: "16px",
-    ":::placeholder": {
+    "&::placeholder": {
       opacity: 0.8
     }
   }
