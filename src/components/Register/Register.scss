@@ -1,0 +1,60 @@
+.register {
+    width: 375px;
+    height: 812px;
+    background: rgba(244, 194, 127, 0.67);
+    .banner {
+        width: 287px;
+        height: 215px;
+        margin: 68px 44px 0;
+    }
+    h3 {
+        margin: 0;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 115.69%;
+        text-align: center;
+    }
+    p {
+        font-family: 'Poppins';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+    .button {
+        border: unset;
+        cursor: pointer;
+        display: flex;
+        margin-top: 38px;
+        width: 315px;
+        height: 56px;
+        background: linear-gradient(267.72deg, #D8605B -0.89%, #F4C27F 112.29%);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        color:  white;
+        font-weight: 700;
+        font-size: 12px;
+        user-select: none!important;
+        &:hover {
+            background: linear-gradient(267.72deg, #df7672 -0.89%, #f3c891 112.29%);
+        }
+    }
+    .question {
+        margin-top: 21px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        span {
+            font-weight: 700;
+            color:rgba(216, 96, 91, 1);
+            cursor: pointer;
+        }
+    }
+}

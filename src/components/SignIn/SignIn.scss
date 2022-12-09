@@ -1,0 +1,58 @@
+.sign-in {
+    width: 375px;
+    height: 812px;
+    background: rgba(244, 194, 127, 0.67);
+    .banner {
+        width: 287px;
+        height: 215px;
+        margin: 68px 44px 0;
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 55px;
+        p {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: center;
+            span {
+                font-size: 27px;
+            }
+        }
+    }
+    .button {
+        margin-top: 140px;
+        border: unset;
+        cursor: pointer;
+        display: flex;
+        width: 315px;
+        height: 56px;
+        background: linear-gradient(267.72deg, #D8605B -0.89%, #F4C27F 112.29%);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        color:  white;
+        font-weight: 700;
+        font-size: 12px;
+        user-select: none!important;
+        &:hover {
+            background: linear-gradient(267.72deg, #df7672 -0.89%, #f3c891 112.29%);
+        }
+    }
+    .question {
+        margin-top: 21px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        span {
+            font-weight: 700;
+            color:rgba(216, 96, 91, 1);
+            cursor: pointer;
+        }
+    }
+}
