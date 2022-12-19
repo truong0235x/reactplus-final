@@ -24,11 +24,11 @@ function Dashboard() {
       <div className='information-user'>
         <div className='wrap-avatar'>
           <div className='avatar'>
-            <img src={avatar} alt='avatar' />
+            <img src={avatar || images.avatar} alt='avatar' />
           </div>
         </div>
-        <h3>{name}</h3>
-        <p>@{id}</p>
+        <h3>{name || "Monica Gamage"}</h3>
+        <p>@{id || "monicagamage"}</p>
         <div className='button'>
           <button onClick={()=> navigate("/sign-in")}>Log Out</button>
         </div>
@@ -52,17 +52,17 @@ function Dashboard() {
           </div>
           <div className='tasks-list-wrpaper'>
             {
-              tasksList.map((item)=>(
+              tasksList?.map((item)=>(
                 <div key={item.id} className='wrap-task'>
                   {
                     item.completed ? 
                     <>
-                      <img src={images.circle2} />
+                      <img src={images.circle2} alt="circle" />
                       <div>{item.name}</div>
                     </>
                     :
                     <>
-                      <img src={images.square} />
+                      <img src={images.square} alt="circle" />
                       <div>{item.name}</div>
                     </>
                   }
