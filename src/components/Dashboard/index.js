@@ -15,7 +15,7 @@ function Dashboard() {
   useEffect(()=>{
     getTasksList()
       .then(res=>{
-        setTaskList(res.data)
+        setTaskList(res?.data)
       })
   },[])
 
@@ -52,7 +52,7 @@ function Dashboard() {
           </div>
           <div className='tasks-list-wrpaper'>
             {
-              tasksList?.map((item)=>(
+              tasksList && tasksList.map((item)=>(
                 <div key={item.id} className='wrap-task'>
                   {
                     item.completed ? 
