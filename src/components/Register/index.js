@@ -20,7 +20,7 @@ function Register() {
     email: yup.string().required("you must enter email").email()
   })
 
-  const { control, handleSubmit, watch, formState: { errors, isValid } } = useForm({
+  const { control, handleSubmit, watch, formState: { errors } } = useForm({
     resolver: yupResolver(validation),
     mode: "onBlur",
   });
@@ -33,6 +33,9 @@ function Register() {
         localStorage.setItem("name", res.data.name)
         localStorage.setItem("id", res.data.id)
         navigate("/sign-in")
+      })
+      .catch(error =>{
+        alert(error?.response?.data);
       })
     } else {
       alert("Passwords do not match")
